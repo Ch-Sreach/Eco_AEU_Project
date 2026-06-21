@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link rel="stylesheet" href="../../dist/output.css" />
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
+
 </head>
 <body class="bg-stone-50 text-stone-900 dark:bg-dark-900 dark:text-stone-100 font-body antialiased">
 
@@ -22,7 +24,16 @@
   <!-- Navbar -->
   <header class="sticky top-0 z-[100] bg-stone-50/95 dark:bg-dark-900/95 backdrop-blur-md border-b border-stone-200 dark:border-dark-700 transition-colors duration-300">
     <nav class="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2 font-display text-2xl tracking-[0.15em] font-bold"><span class="w-6 h-6 bg-luxe-500 flex items-center justify-center"><i class="fa-solid fa-gem text-white text-xs"></i></span>LUXE</a>
+      <a href="index.html" class="flex items-center gap-3">
+        <img
+          src="/images/logo.png"
+          alt="LUXE Logo"
+          class="h-10 w-10 object-contain"
+        >
+        <span class="font-display text-2xl tracking-[0.15em] font-bold">
+          LUXE
+        </span>
+      </a>
       <ul class="hidden md:flex items-center gap-1">
         <li><a href="index.html"      class="nav-link hover-underline">Home</a></li>
         <li><a href="collection.html" class="nav-link hover-underline" aria-current="page">Collection</a></li>
@@ -44,7 +55,7 @@
 
   <!-- Page Hero -->
   <div class="page-banner">
-    <div class="page-banner-bg" style="background-image:url('../images/banner.jpg')"></div>
+    <div class="page-banner-bg" style="background-image:url('/images/banner.jpg')"></div>
     <div class="page-banner-content">
       <span class="section-label text-luxe-400">Browse</span>
       <h1 class="font-display text-4xl text-white font-light">All Collection</h1>

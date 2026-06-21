@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-
-  <!-- SEO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LUXE Fashion — Premium E-Commerce | Cambodia</title>
@@ -11,6 +9,7 @@
   <meta name="author" content="LUXE Fashion" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://luxefashion.com/" />
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
   <!-- Open Graph -->
   <meta property="og:type"        content="website" />
   <meta property="og:url"         content="https://luxefashion.com/" />
@@ -36,7 +35,7 @@
   </script>
 
   <!-- Logo -->
-  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/logo.png" type="image/x-icon">
   <!-- ── Fonts ─────────────────────────────────────────── -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
@@ -74,10 +73,15 @@
   <!-- ══ NAVBAR ════════════════════════════════════════ -->
   <header id="navbar" class="sticky top-0 z-[100] bg-stone-50/95 dark:bg-dark-900/95 backdrop-blur-md border-b border-stone-200 dark:border-dark-700 transition-colors duration-300">
     <nav class="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-2 font-display text-2xl tracking-[0.15em] font-bold">
-        <span class="w-6 h-6 bg-luxe-500 flex items-center justify-center">
-          <i class="fa-solid fa-gem text-white text-xs"></i>
-        </span>LUXE
+      <a href="index.html" class="flex items-center gap-3">
+        <img
+          src="/images/logo.png"
+          alt="LUXE Fashion Logo"
+          class="h-10 w-10 object-contain"
+        >
+        <span class="font-display text-2xl tracking-[0.15em] font-bold">
+          LUXE
+        </span>
       </a>
       <ul class="hidden md:flex items-center gap-1">
         <li><a href="index.html"      class="nav-link hover-underline" aria-current="page">Home</a></li>
@@ -127,9 +131,9 @@
     <section class="relative h-[92vh] min-h-[600px] overflow-hidden grain" aria-label="Hero Banner">
       <!-- Slides -->
       <div id="hero-slides" class="absolute inset-0">
-        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('../images/banner1.jpg');opacity:1;z-index:1"></div>
-        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('../images/banner.jpg');opacity:0;z-index:0"></div>
-        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('../images/banner-img-1.jpg');opacity:0;z-index:0"></div>
+        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('/images/banner1.jpg');opacity:1;z-index:1"></div>
+        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('/images/banner.jpg');opacity:0;z-index:0"></div>
+        <div class="hero-slide absolute inset-0 bg-cover bg-center" style="background-image:url('/images/banner-img-1.jpg');opacity:0;z-index:0"></div>
       </div>
       <div class="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-transparent z-10"></div>
 
@@ -215,7 +219,7 @@
     <section aria-label="Category editorial">
       <div class="grid grid-cols-1 md:grid-cols-2 min-h-[480px]">
         <div class="relative overflow-hidden">
-          <img src="../images/men-pic.jpeg" alt="Men's collection" class="w-full h-full object-cover" style="min-height:300px" loading="lazy"/>
+          <img src="/images/men-pic.jpeg" alt="Men's collection" class="w-full h-full object-cover" style="min-height:300px" loading="lazy"/>
           <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-10">
             <p class="section-label text-luxe-300">Men's Edit</p>
             <h3 class="font-display text-3xl text-white mb-4">Sharp &amp; Refined</h3>
@@ -224,14 +228,14 @@
         </div>
         <div class="grid grid-rows-2">
           <div class="relative overflow-hidden">
-            <img src="../images/women-collection.jpeg" alt="Women's collection" class="w-full h-full object-cover" loading="lazy"/>
+            <img src="/images/women-collection.jpeg" alt="Women's collection" class="w-full h-full object-cover" loading="lazy"/>
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
               <h3 class="font-display text-2xl text-white mb-3">Women's Collection</h3>
               <a href="collection.html" class="w-fit px-5 py-2 bg-white text-dark-900 text-xs font-sans tracking-widest uppercase hover:bg-luxe-400 hover:text-white transition-all">Shop Women</a>
             </div>
           </div>
           <div class="relative overflow-hidden">
-            <img src="../images/accessories-pic.webp" alt="Accessories" class="w-700 h-full object-cover" loading="lazy"/>
+            <img src="/images/accessories-pic.webp" alt="Accessories" class="w-700 h-full object-cover" loading="lazy"/>
             <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8">
               <h3 class="font-display text-2xl text-white mb-3">Accessories</h3>
               <a href="collection.html" class="w-fit px-5 py-2 bg-white text-dark-900 text-xs font-sans tracking-widest uppercase hover:bg-luxe-400 hover:text-white transition-all">Shop Accessories</a>
@@ -242,7 +246,7 @@
     </section>
 
     <!-- ══ GRAND SALE ═════════════════════════════════════ -->
-    <section class="relative overflow-hidden grain py-24" style="background:url('../images/banner2.jpeg') center/cover no-repeat" aria-label="Grand Sale">
+    <section class="relative overflow-hidden grain py-24" style="background:url('/images/banner2.jpeg') center/cover no-repeat" aria-label="Grand Sale">
       <div class="absolute inset-0 bg-black/65"></div>
       <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
         <span class="section-label text-luxe-300">Limited Time</span>
@@ -292,7 +296,7 @@
             <div class="stars mb-4">★★★★★</div>
             <p class="font-body text-stone-600 dark:text-stone-400 italic mb-6 leading-relaxed">"Absolutely love the quality. The packaging makes it feel like a luxury gift. LUXE has become my go-to store for every occasion."</p>
             <div class="flex items-center gap-3">
-              <img src="../images/cus2.jpg" alt="Sreymom Chan" class="w-10 h-10 rounded-full object-cover"/>
+              <img src="/images/cus2.jpg" alt="Sreymom Chan" class="w-10 h-10 rounded-full object-cover"/>
               <div>
                 <p class="text-sm font-sans font-semibold">Thorm Sophal</p>
                 <p class="text-xs text-stone-500 font-body">Phnom Penh, Cambodia</p>
@@ -303,7 +307,7 @@
             <div class="stars mb-4">★★★★★</div>
             <p class="font-body text-stone-600 dark:text-stone-400 italic mb-6 leading-relaxed">"Fast delivery, genuine products, excellent customer service. Ordered Monday, received Wednesday. Highly recommend LUXE!"</p>
             <div class="flex items-center gap-3">
-              <img src="../images/cus3.jpg" alt="Dara Kosal" class="w-10 h-10 rounded-full object-cover"/>
+              <img src="/images/cus3.jpg" alt="Dara Kosal" class="w-10 h-10 rounded-full object-cover"/>
               <div>
                 <p class="text-sm font-sans font-semibold">Thai huoyly</p>
                 <p class="text-xs text-stone-500 font-body">Siem Reap, Cambodia</p>
@@ -314,7 +318,7 @@
             <div class="stars mb-4">★★★★★</div>
             <p class="font-body text-stone-600 dark:text-stone-400 italic mb-6 leading-relaxed">"Really love all of your products. Incredible range from casual to formal. The loyalty rewards program is fantastic — I've already saved so much this year!"</p>
             <div class="flex items-center gap-3">
-              <img src="../images/cus1.jpg" alt="Bopha Rith" class="w-10 h-10 rounded-full object-cover"/>
+              <img src="/images/cus1.jpg" alt="Bopha Rith" class="w-10 h-10 rounded-full object-cover"/>
               <div>
                 <p class="text-sm font-sans font-semibold">Khuon Sopheap</p>
                 <p class="text-xs text-stone-500 font-body">Battambang, Cambodia</p>
